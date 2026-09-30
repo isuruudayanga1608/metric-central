@@ -41,9 +41,9 @@ export const excelEmbedConfig = {
       // "Metrics" data sheet, and each chart has a unique name matching the
       // sheet name below.
       '2026-June-Production':
-        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Bcf9936b8-581e-4bf7-97eb-2ce68ad4b5e4%7D&action=embedview&wdAllowInteractivity=False&Item=AKS_2026_June_Prod&wdDownloadButton=True&wdInConfigurator=True',
+        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Ba291b2b2-7829-436a-9e51-d32002190bd2%7D&action=embedview&wdAllowInteractivity=False&Item=AKS_2026_June_Prod&wdDownloadButton=True&wdInConfigurator=True',
       '2026-June-Non-Production':
-        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Bcf9936b8-581e-4bf7-97eb-2ce68ad4b5e4%7D&action=embedview&wdAllowInteractivity=False&Item=AKS_2026_June_NonProd&wdDownloadButton=True&wdInConfigurator=True',
+        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Ba291b2b2-7829-436a-9e51-d32002190bd2%7D&action=embedview&wdAllowInteractivity=False&Item=AKS_2026_June_NonProd&wdDownloadButton=True&wdInConfigurator=True',
     },
   },
 
@@ -55,9 +55,9 @@ export const excelEmbedConfig = {
     views: {
       // Sheet: RMAN_2026_June_Prod / RMAN_2026_June_NonProd
       '2026-June-Production':
-        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Bcf9936b8-581e-4bf7-97eb-2ce68ad4b5e4%7D&action=embedview&wdAllowInteractivity=False&Item=RMAN_2026_June_Prod&wdDownloadButton=True&wdInConfigurator=True',
+        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Ba291b2b2-7829-436a-9e51-d32002190bd2%7D&action=embedview&wdAllowInteractivity=False&Item=RMAN_2026_June_Prod&wdDownloadButton=True&wdInConfigurator=True',
       '2026-June-Non-Production':
-        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Bcf9936b8-581e-4bf7-97eb-2ce68ad4b5e4%7D&action=embedview&wdAllowInteractivity=False&Item=RMAN_2026_June_NonProd&wdDownloadButton=True&wdInConfigurator=True',
+        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Ba291b2b2-7829-436a-9e51-d32002190bd2%7D&action=embedview&wdAllowInteractivity=False&Item=RMAN_2026_June_NonProd&wdDownloadButton=True&wdInConfigurator=True',
     },
   },
 
@@ -69,9 +69,9 @@ export const excelEmbedConfig = {
     views: {
       // Sheet: EncIFS_2026_June_Prod / EncIFS_2026_June_NonProd
       '2026-June-Production':
-        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Bcf9936b8-581e-4bf7-97eb-2ce68ad4b5e4%7D&action=embedview&wdAllowInteractivity=False&Item=EncIFS_2026_June_Prod&wdDownloadButton=True&wdInConfigurator=True',
+        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Ba291b2b2-7829-436a-9e51-d32002190bd2%7D&action=embedview&wdAllowInteractivity=False&Item=EncIFS_2026_June_Prod&wdDownloadButton=True&wdInConfigurator=True',
       '2026-June-Non-Production':
-        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Bcf9936b8-581e-4bf7-97eb-2ce68ad4b5e4%7D&action=embedview&wdAllowInteractivity=False&Item=EncIFS_2026_June_NonProd&wdDownloadButton=True&wdInConfigurator=True',
+        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Ba291b2b2-7829-436a-9e51-d32002190bd2%7D&action=embedview&wdAllowInteractivity=False&Item=EncIFS_2026_June_NonProd&wdDownloadButton=True&wdInConfigurator=True',
     },
   },
 
@@ -83,9 +83,9 @@ export const excelEmbedConfig = {
     views: {
       // Sheet: OSPatch_2026_June_Prod / OSPatch_2026_June_NonProd
       '2026-June-Production':
-        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Bcf9936b8-581e-4bf7-97eb-2ce68ad4b5e4%7D&action=embedview&wdAllowInteractivity=False&Item=OSPatch_2026_June_Prod&wdDownloadButton=True&wdInConfigurator=True',
+        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Ba291b2b2-7829-436a-9e51-d32002190bd2%7D&action=embedview&wdAllowInteractivity=False&Item=OSPatch_2026_June_Prod&wdDownloadButton=True&wdInConfigurator=True',
       '2026-June-Non-Production':
-        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Bcf9936b8-581e-4bf7-97eb-2ce68ad4b5e4%7D&action=embedview&wdAllowInteractivity=False&Item=OSPatch_2026_June_NonProd&wdDownloadButton=True&wdInConfigurator=True',
+        'https://ifs-my.sharepoint.com/personal/isuru_udayanga_ifs_com/_layouts/15/Doc.aspx?sourcedoc=%7Ba291b2b2-7829-436a-9e51-d32002190bd2%7D&action=embedview&wdAllowInteractivity=False&Item=OSPatch_2026_June_NonProd&wdDownloadButton=True&wdInConfigurator=True',
     },
   },
 
