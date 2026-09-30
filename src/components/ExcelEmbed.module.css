@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
   width: 100%;
   max-width: 1200px;
@@ -10,6 +11,13 @@
 .frameContainer {
   position: relative;
   width: 100%;
+  /* Excel Online's embed view is a live viewport into the worksheet, not a
+     scaled image: a wider/taller iframe reveals more real worksheet area
+     rather than a bigger version of the same chart. Capping this close to
+     the chart's own on-sheet size (~24cm x 13.5cm ≈ 907x510px) keeps the
+     iframe from requesting more canvas than the chart actually fills,
+     which is what was exposing extra white worksheet around it. */
+  max-width: 920px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--color-border-soft);
