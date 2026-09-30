@@ -1,0 +1,42 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 140px;
+}
+
+.label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.select {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  padding: 10px 34px 10px 14px;
+  font-size: 0.95rem;
+  min-height: 44px;
+  background-image: linear-gradient(45deg, transparent 50%, var(--color-white) 50%),
+    linear-gradient(135deg, var(--color-white) 50%, transparent 50%);
+  background-position: calc(100% - 18px) center, calc(100% - 13px) center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.select:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.select:hover:not(:disabled) {
+  border-color: var(--color-cyan-glow);
+}
+
+.select option {
+  color: #1a0b3d;
+}

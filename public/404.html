@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Metric Central</title>
+    <script>
+      // GitHub Pages has no server-side rewrites, so a deep link like
+      // /metric-central/activities/aks-upgrades gets served this static
+      // 404 page on refresh/direct load. Encode the real path + query into
+      // the search string (a second, literal "?" inside a query string is
+      // valid and untouched by the URL parser) and redirect to the site
+      // root, where the script in index.html decodes it and restores the
+      // real URL via history.replaceState before React Router mounts.
+      var pathSegmentsToKeep = 1; // keeps the /metric-central base segment
+      var loc = window.location;
+      var segments = loc.pathname.slice(1).split('/');
+      var basePath = segments.slice(0, pathSegmentsToKeep).join('/');
+      var restPath = segments.slice(pathSegmentsToKeep).join('/');
+
+      loc.replace(
+        loc.protocol + '//' + loc.host + '/' + basePath + '/?/' + restPath + loc.search + loc.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

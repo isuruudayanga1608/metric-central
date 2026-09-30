@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="%BASE_URL%assets/ifs-ai-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Counterpart to public/404.html's GitHub Pages SPA redirect: decode
+      // the real deep-link path + query back out of the search string and
+      // restore it via history.replaceState before React Router mounts, so
+      // the app renders the URL the visitor actually asked for.
+      (function () {
+        var search = window.location.search;
+        if (search.length < 2 || search[1] !== '/') return;
+        var encodedPathAndQuery = search.slice(1); // e.g. "/activities/x?year=2026"
+        var basePath = window.location.pathname.replace(/\/$/, '');
+        window.history.replaceState(null, '', basePath + encodedPathAndQuery + window.location.hash);
+      })();
+    </script>
+    <meta
+      name="description"
+      content="Metric Central - central hub for monthly maintenance metrics and insights."
+    />
+    <title>Metric Central</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

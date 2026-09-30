@@ -1,0 +1,76 @@
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px clamp(16px, 4vw, 48px);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.secondaryButton,
+.primaryButton {
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.secondaryButton {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: var(--color-white);
+}
+
+.secondaryButton:hover {
+  border-color: var(--color-cyan-glow);
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, var(--color-blue-accent), var(--color-purple-primary));
+  border: 1px solid transparent;
+  color: var(--color-white);
+}
+
+.primaryButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+}
+
+.primaryButton:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+@media (max-width: 640px) {
+  .bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .actions {
+    justify-content: stretch;
+  }
+
+  .secondaryButton,
+  .primaryButton {
+    flex: 1;
+  }
+}

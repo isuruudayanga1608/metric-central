@@ -1,0 +1,51 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+/* Flexbox + justify-content:center balances an incomplete final row
+   (e.g. 2 cards left over from 5) by centering it, instead of the plain
+   grid's default left alignment. */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grid > * {
+  flex: 0 1 calc((100% - 2 * 2.5rem) / 3);
+}
+
+@media (max-width: 900px) {
+  .grid > * {
+    flex-basis: calc((100% - 1.25rem) / 2);
+  }
+}
+
+@media (max-width: 520px) {
+  .grid > * {
+    flex-basis: 100%;
+  }
+}

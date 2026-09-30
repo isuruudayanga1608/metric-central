@@ -1,0 +1,73 @@
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: radial-gradient(120% 120% at 50% 0%, var(--color-bg-mid) 0%, var(--color-bg-deep) 60%);
+  opacity: 0;
+  animation: bgFadeIn 900ms ease forwards;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.45;
+  will-change: transform;
+}
+
+.blobYellow {
+  width: 32vw;
+  height: 32vw;
+  min-width: 320px;
+  min-height: 320px;
+  left: -8vw;
+  bottom: -6vw;
+  background: var(--glow-yellow);
+}
+
+.blobCoral {
+  width: 26vw;
+  height: 26vw;
+  min-width: 260px;
+  min-height: 260px;
+  right: -6vw;
+  bottom: 8vw;
+  background: var(--glow-coral);
+}
+
+.blobBlue {
+  width: 30vw;
+  height: 30vw;
+  min-width: 300px;
+  min-height: 300px;
+  right: -8vw;
+  top: -6vw;
+  background: var(--glow-blue);
+}
+
+.blobViolet {
+  width: 24vw;
+  height: 24vw;
+  min-width: 240px;
+  min-height: 240px;
+  left: 10vw;
+  top: -10vw;
+  background: var(--glow-violet);
+}
+
+@keyframes bgFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .background {
+    opacity: 1;
+    animation: none;
+  }
+}
